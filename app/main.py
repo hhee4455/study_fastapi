@@ -1,7 +1,7 @@
 from fastapi import FastAPI
-from app.interfaces.user_controller import router as user_router
-from app.interfaces.post_controller import router as post_router
-from app.interfaces.comment_controller import router as comment_router
+from app.routers.user_router import router as user_router
+from app.routers.post_router import router as post_router
+from app.routers.comment_router import router as comment_router
 
 app = FastAPI(
     title="FastAPI + MongoDB API",
